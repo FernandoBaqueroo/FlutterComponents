@@ -14,6 +14,8 @@ class ListView2Screen extends StatelessWidget {
         title: const Text('ListView Tipo 2'),
         elevation: 0, //SOMBRA
         backgroundColor: Colors.indigo,
+        foregroundColor: Colors.white,
+        centerTitle: true,
       ),
       body: ListView.separated(
         //CONTENIDO DE LA LISTA
