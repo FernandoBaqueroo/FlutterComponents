@@ -22,7 +22,11 @@ class MyApp extends StatelessWidget {
         'listview2': ( BuildContext context ) => const ListView2Screen(),
         'alert': ( BuildContext context ) => const AlertScreen(),
         'card': ( BuildContext context ) => const CardScreen()
-      }
+      },
+      //Nos sirve para trabajar con rutas dinámicas. Puede recibir argumentos.
+      onGenerateRoute: (settings) {
+        return MaterialPageRoute(builder: (context) => const AlertScreen());
+      },
     );
   }
 }
