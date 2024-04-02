@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
@@ -8,7 +7,8 @@ class CustomCard extends StatelessWidget {
   final String description;
   final VoidCallback onTap;
 
-  const CustomCard({super.key, 
+  const CustomCard({
+    super.key, 
     required this.icon,
     required this.iconColor,
     required this.title,
@@ -25,7 +25,10 @@ class CustomCard extends StatelessWidget {
         onTap: onTap,
         leading: Container(
           padding: const EdgeInsets.all(10.0),
-          color: iconColor.withOpacity(0.2),  
+          decoration: BoxDecoration(
+            color: iconColor.withOpacity(0.2),
+            shape: BoxShape.circle, // Forma redonda
+          ),  
           child: CircleAvatar(
             backgroundColor: iconColor.withOpacity(0.8),
             child: Icon(
