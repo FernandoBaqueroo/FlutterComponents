@@ -33,6 +33,21 @@ class AppRoutes {
         icon: Icons.card_giftcard_sharp,
         name: 'CardScreen',
         screen: const CardScreen()),
+    MenuOption(
+        route: 'avatar',
+        icon: Icons.supervised_user_circle_sharp,
+        name: 'Circle Avatar',
+        screen: const AvatarScreen()),
+    MenuOption(
+        route: 'animation',
+        icon: Icons.animation_outlined,
+        name: 'Animations Screen',
+        screen: const AnimatedScreen()),
+    MenuOption(
+        route: 'inputs',
+        icon: Icons.input_rounded,
+        name: 'Inputs Screen',
+        screen: const InputScreen()),
   ];
 
   //DEVUELVE TODAS LAS RUTAS AÑADIDAS DE APPROUTES, ES DECIR ESTÁN YA IMPLEMENTADAS.
