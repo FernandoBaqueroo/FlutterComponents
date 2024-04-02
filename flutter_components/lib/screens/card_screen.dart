@@ -44,6 +44,14 @@ class CardScreen extends StatelessWidget {
           const ImageCard(
             image: "https://static.vecteezy.com/system/resources/previews/003/623/626/non_2x/sunset-lake-landscape-illustration-free-vector.jpg",
             description: "LandScape",
+          ),
+          const ImageCard(
+            image: "https://img.freepik.com/free-vector/mountain-lake-sunset-landscape-realistic-tree-forest-mountain-silhouettes-evening-wood-panorama-illustration-wild-nature-background_1150-39419.jpg",
+            description: "LandScape",
+          ),
+          const ImageCard(
+            image: "https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg",
+            description: "LandScape",
           )
         ],
       ),
