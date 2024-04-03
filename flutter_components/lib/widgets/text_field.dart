@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class CustomTextField extends StatelessWidget {
   final IconData icon;
@@ -7,6 +6,8 @@ class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final bool isPassword;
   final TextInputType? keyboardType;
+  final String formProperty;
+  final Map<String, String> formValues;
 
   const CustomTextField({
     super.key,
@@ -15,6 +16,8 @@ class CustomTextField extends StatelessWidget {
     required this.controller,
     this.isPassword = false,
     this.keyboardType,
+    required this.formProperty,
+    required this.formValues,
   });
 
   @override
@@ -50,7 +53,7 @@ class CustomTextField extends StatelessWidget {
           ),
           textCapitalization: TextCapitalization.words,
           onChanged: (value) {
-            print('value: $value');
+            formValues[formProperty] = value;
           },
         )
       ],

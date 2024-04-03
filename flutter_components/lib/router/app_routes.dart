@@ -48,6 +48,11 @@ class AppRoutes {
         icon: Icons.input_rounded,
         name: 'Inputs Screen',
         screen: const InputScreen()),
+    MenuOption(
+        route: 'sliders',
+        icon: Icons.slideshow_rounded,
+        name: 'Slider Screen',
+        screen: const SliderScreen())
   ];
 
   //DEVUELVE TODAS LAS RUTAS AÑADIDAS DE APPROUTES, ES DECIR ESTÁN YA IMPLEMENTADAS.
