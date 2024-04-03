@@ -52,7 +52,12 @@ class AppRoutes {
         route: 'sliders',
         icon: Icons.slideshow_rounded,
         name: 'Slider Screen',
-        screen: const SliderScreen())
+        screen: const SliderScreen()),
+    MenuOption(
+        route: 'listviewbuilder',
+        icon: Icons.list_sharp,
+        name: 'Infinite Scroll & Pull to Refresh',
+        screen: const ListViewBuilderScreen())
   ];
 
   //DEVUELVE TODAS LAS RUTAS AÑADIDAS DE APPROUTES, ES DECIR ESTÁN YA IMPLEMENTADAS.
